@@ -1,8 +1,16 @@
+import AuthLayout from "../components/auth/AuthLayout";
+import SignupForm from "../components/auth/SignupForm";
+
+import authImage from "../assets/images/authImage.jpg";
+
 const Signup = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen text-5xl font-bold">
-      Signup Page
-    </div>
+    <AuthLayout
+      title="Sign Up"
+      image={authImage}
+    >
+      <SignupForm />
+    </AuthLayout>
   );
 };
 

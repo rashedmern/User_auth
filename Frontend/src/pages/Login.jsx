@@ -1,8 +1,16 @@
+import AuthLayout from "../components/auth/AuthLayout";
+import LoginForm from "../components/auth/LoginForm";
+
+import authImage from "../assets/images/authImage.jpg";
+
 const Login = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen text-5xl font-bold">
-      Login Page
-    </div>
+    <AuthLayout
+      title="Sign In"
+      image={authImage}
+    >
+      <LoginForm />
+    </AuthLayout>
   );
 };
 
